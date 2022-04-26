@@ -1,3 +1,6 @@
+# Local IDE
+*.code-workspace
+
 # Local .terraform directories
 **/.terraform/*
 

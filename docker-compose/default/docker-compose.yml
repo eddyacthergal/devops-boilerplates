@@ -1,0 +1,17 @@
+## Default Docker Compose for Server
+version: '3.9'
+
+## All Networks
+networks:
+  ## Default Network
+  default:
+    driver: bridge
+    name: traefik_gateway
+
+## All Services
+services:
+
+  ## Traefik Reverse Proxy: to manage all docker containers
+  traefik:
+    container_name: traefik
+    image: traefik:latest
